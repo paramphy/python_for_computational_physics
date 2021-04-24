@@ -1,3 +1,9 @@
+# Graph both of the following functions on a single figure, with 
+# a usefully-sized scale.
+# (a)x4e−2x
+# (b)[x2e−xsin(x2)]2
+# Make sure your figure has legend, range, title, axis labels, and so on.
+
 # importing matplotlib module 
 from matplotlib import pyplot as plt
 import numpy as np

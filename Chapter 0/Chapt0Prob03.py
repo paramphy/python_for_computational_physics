@@ -1,3 +1,17 @@
+#The  data  in  file  Ba137.txt  is  actual  data  from  a  radioactive
+#   decay experiment; the first column is the number of decaysN, the
+#  second is the timet in seconds.  We’d like to know the half-life
+# t1/2of137Ba.  It should follow the decay equation
+# N=Noe−λt whereλ=log 2 t1/2.  Using the techniques you’ve learned
+#  in this chapter,load the data from file Ba137.txt into 
+# appropriately-named variablesin an ipython session.  Experiment with
+#  different values ofNandλand plot the resulting equation on top of
+#  the data.  (Python usesexp()calculate  the  exponential  function:
+#   i.e.y = A∗exp(−L∗time))  Don’tworry about automating this process
+#  yet (unless youreallywant to!)just try adjusting things by hand until
+#  the equation matches the datapretty well.  What is your best estimate
+# fort1/2?
+
 from matplotlib import pyplot as plt
 import numpy as np
 

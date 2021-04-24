@@ -1,3 +1,7 @@
+#The data shown in figure 2 is most usefully analyzed by looking
+#  at theratioof the two microphone signals.  Plot this ratio, 
+#  with frequencyon thexaxis.  Be sure to clean up the graph with
+#  appropriate scales,axes labels, and a title.
 from matplotlib import pyplot as plt
 import numpy as np
 
