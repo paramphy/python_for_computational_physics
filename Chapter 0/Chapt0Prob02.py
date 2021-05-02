@@ -12,7 +12,7 @@ import numpy as np
 N = []
 t = []
 
-with open('Chapter 0\Ba137.txt','r') as file:
+with open("Chapter 0\Ba137.txt", "r") as file:
     data = file.readlines()
     for line in data:
         word = line.split()
@@ -22,14 +22,14 @@ with open('Chapter 0\Ba137.txt','r') as file:
 N = np.array(N)
 t = np.array(t)
 logN = np.log(N)
-N_theoratical = 
+# N_theoratical =
 
 # Note that even in the OO-style, we use `.pyplot.figure` to create the figure.
 fig, ax = plt.subplots()  # Create a figure and an axes.
-ax.plot(t, logN, label='Data')  # Plot some data on the axes.
+ax.plot(t, logN, label="Data")  # Plot some data on the axes.
 
-ax.set_xlabel('Time')  # Add an x-label to the axes.
-ax.set_ylabel('N')  # Add a y-label to the axes.
+ax.set_xlabel("Time")  # Add an x-label to the axes.
+ax.set_ylabel("N")  # Add a y-label to the axes.
 ax.set_title("Chapter 0 Problem 03")  # Add a title to the axes.
 ax.legend()  # Add a legend.
 plt.show()
