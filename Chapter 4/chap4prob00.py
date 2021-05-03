@@ -43,7 +43,7 @@ def springpendulum(y, time):
     return np.array([g0, g1, g2, g3])
 
 
-# Now we do t h e c a l c u l a t i o n s .
+# Now we do the calculations.
 answer = odeint(springpendulum, y, time)
 # Now graph the results.
 # rather than graph in terms of t, I’m going
