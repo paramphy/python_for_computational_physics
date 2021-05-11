@@ -37,9 +37,9 @@ def springpendulum(y, time):
     # just the usual two derivatives!
 
     g0 = y[1]
-    g1 = (Lo + y[0]) * y[3] * y[3] - k / m * y[0] + gravity * np.cos(y[2])
+    g1 = (Lo + y[0]) * y[3] * y[3] - k / m * y[0] + time * np.cos(y[2])
     g2 = y[3]
-    g3 = -(gravity * np.sin(y[2]) + 2.0 * y[1] * y[3]) / (Lo + y[0])
+    g3 = -(time * np.sin(y[2]) + 2.0 * y[1] * y[3]) / (Lo + y[0])
     return np.array([g0, g1, g2, g3])
 
 
