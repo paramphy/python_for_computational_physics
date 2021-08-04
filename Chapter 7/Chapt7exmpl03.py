@@ -13,7 +13,7 @@ atoms = np.ones([400, 2]) * 100
 fig, ax = plt.subplots()
 ax.set_xlabel("Position along X axis")
 ax.set_ylabel("Position along Y axis")
-ax.set_title("Diffusion of particles")  # Add a title to the axes.
+ax.set_title("Diffusion of particles") 
 
 (ln,) = plt.plot(atoms[:, 0], atoms[:, 1], "ro")
 
