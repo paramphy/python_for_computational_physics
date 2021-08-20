@@ -5,7 +5,6 @@
 from matplotlib import pyplot as plt
 import numpy as np
 
-file = open("Chapter 0\microphones.txt", "r")
 
 f = []
 m1 = []

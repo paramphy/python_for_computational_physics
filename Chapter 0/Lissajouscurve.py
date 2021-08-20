@@ -9,12 +9,11 @@ def func(time, amplitude, frequency, delta):
     return displacement
 
 
-# ratio = float(input("Ratio between two frequencies: "))
+
 wa = float(input("Frequency of the first wave: "))
 wb = float(input("Frequency of the second wave: "))
-# delta = float(input("Input the value of delta in multiple of pi: "))
-A = 1.00 #float(input("Amplitude for first wave A: "))
-B = 1.00 #float(input("Amplitude for first wave B: "))
+A = 1.00 
+B = 1.00 
 
 fig = plt.figure()
 ax = plt.axes(xlim=(-1, 1), ylim=(-1, 1))
@@ -34,7 +33,6 @@ def animate(i):
     y = func(t, B, wb, 0)
     line.set_data(x, y)
     return line,
-    #print(np.pi, delta*np.pi)
 
 anim = FuncAnimation(fig, animate, init_func=init,
                                frames=200, interval=20, blit=True)
