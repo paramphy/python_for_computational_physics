@@ -23,11 +23,11 @@ for j in range(N):
 
     point =[uniform(-1,1), uniform(-1,1), uniform(-1,1), uniform(-1,1)]
 
-    if  point[0]*point[0] + point[1]*point[1] + point[2]*point[2] + point[3]*point[3] < 1:
+    if  point[0]*point[0] + point[1]*point[1] + point[2]*point[2]  + point[3]*point[3] < 1:
         count = count + 1
 
 print(count)
-Answer = 2**4*float(count)/ float(N)
+Answer = 2**len(point)*float(count)/ float(N)
 
 # Make sure to use float, otherwise the answer comes out zero!
 # Also note that in this case the volume of our ” known ” volume(the unit
