@@ -1,0 +1,102 @@
+#######################################################################################################################
+#                                                 MATPLOTLIB RC FILE                                                  #
+#                                                    SHIV UPADHYAY                                                    #
+#######################################################################################################################
+backend:	macosx	# Backend for Mac Users
+#backend:	qt4agg	# Backend for Windows Users
+#backend:	tkagg	# Backend for Linux Users
+                             #############################################################
+                             #                           TEXT                            #
+                             #############################################################
+                             mathtext.fontset              :                            cm
+                             mathtext.rm                   :                         serif
+                             text.antialiased              :                          True
+                             text.color                    :                         black
+                             #############################################################
+                             #                           GRIDS                           #
+                             #############################################################
+                             grid.alpha                    :                           1.0
+                             grid.color                    :                         black
+                             grid.linestyle                :                             :
+                             grid.linewidth                :                          0.25
+                             #############################################################
+                             #                          FIGURE                           #
+                             #############################################################
+                             figure.dpi                    :                           100
+                             figure.edgecolor              :                         white
+                             figure.facecolor              :                         white
+                             figure.figsize                :                       5.75, 4
+                             #############################################################
+                             #                           LINES                           #
+                             #############################################################
+                             lines.antialiased             :                          True
+                             lines.linestyle               :                             -
+                             lines.linewidth               :                           1.5
+                             #############################################################
+                             #                           AXES                            #
+                             #############################################################
+                             axes.axisbelow                :                          True
+                             axes.edgecolor                :                         black
+                             axes.facecolor                :                         white
+                             axes.formatter.useoffset      :                         False
+                             axes.grid                     :                         False
+                             axes.labelcolor               :                         black
+                             axes.linewidth                :                          1.25
+                             axes.spines.bottom            :                          True
+                             axes.spines.left              :                          True
+                             axes.spines.right             :                          True
+                             axes.spines.top               :                          True
+                             axes.unicode_minus            :                          True
+                             #############################################################
+                             #                           TICKS                           #
+                             #############################################################
+                             xtick.bottom                  :                          True
+                             xtick.color                   :                             k
+                             xtick.direction               :                            in
+                             xtick.labelsize               :                        medium
+                             xtick.major.bottom            :                          True
+                             xtick.major.size              :                           7.0
+                             xtick.major.top               :                          True
+                             xtick.major.width             :                           0.5
+                             xtick.minor.bottom            :                          True
+                             xtick.minor.size              :                           3.0
+                             xtick.minor.top               :                          True
+                             xtick.minor.visible           :                          True
+                             xtick.minor.width             :                           0.5
+                             xtick.top                     :                          True
+                             ytick.color                   :                             k
+                             ytick.direction               :                            in
+                             ytick.labelsize               :                        medium
+                             ytick.left                    :                          True
+                             ytick.major.size              :                           7.0
+                             ytick.major.width             :                           0.5
+                             ytick.minor.size              :                           3.0
+                             ytick.minor.visible           :                          True
+                             ytick.minor.width             :                           0.5
+                             ytick.right                   :                          True
+                             #############################################################
+                             #                          PATCHES                          #
+                             #############################################################
+                             patch.antialiased             :                          True
+                             #############################################################
+                             #                           FONT                            #
+                             #############################################################
+                             font.family                   :                         serif
+                             font.size                     :                            12
+                             font.stretch                  :                        normal
+                             font.style                    :                        normal
+                             font.variant                  :                        normal
+                             font.weight                   :                        medium
+                             #############################################################
+                             #                          LEGEND                           #
+                             #############################################################
+                             legend.edgecolor              :                       inherit
+                             legend.facecolor              :                       inherit
+                             legend.fancybox               :                          True
+                             legend.fontsize               :                         small
+                             legend.framealpha             :                           1.0
+                             legend.frameon                :                          True
+                             legend.loc                    :                          best
+#######################################################################################################################
+#                            Written                       :              2017-02-06 14:00                            #
+#######################################################################################################################
