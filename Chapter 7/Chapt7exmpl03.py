@@ -15,6 +15,7 @@ ax.set_xlabel("Position along X axis")
 ax.set_ylabel("Position along Y axis")
 ax.set_title("Diffusion of particles") 
 
+
 (ln,) = plt.plot(atoms[:, 0], atoms[:, 1], "ro")
 
 
