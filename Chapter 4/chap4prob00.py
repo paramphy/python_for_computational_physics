@@ -14,11 +14,11 @@ N = 1000  # number of steps to take
 # separated by time dt. I’ll use the order given above.
 
 y = np.zeros([4])
-Lo = 1.0  #unstretched spring length
+Lo = 1.0  # unstretched spring length
 L = 1.0  # Initial stretch of spring
-vo = 0.0  #initial velocity
+vo = 0.0  # initial velocity
 thetao = 0.3  # radians
-omegao = 0.0  #initial angular velocity
+omegao = 0.0  # initial angular velocity
 y[0] = L  # set initial state
 y[1] = vo
 y[2] = thetao

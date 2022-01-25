@@ -1,5 +1,6 @@
 import sys
 from random import randint  # randint(a, b) picks a random integer in
+
 # the range(a, b), inclusive.
 from matplotlib import animation
 import numpy as np
@@ -13,7 +14,7 @@ atoms = np.ones([400, 2]) * 100
 fig, ax = plt.subplots()
 ax.set_xlabel("Position along X axis")
 ax.set_ylabel("Position along Y axis")
-ax.set_title("Diffusion of particles") 
+ax.set_title("Diffusion of particles")
 
 
 (ln,) = plt.plot(atoms[:, 0], atoms[:, 1], "ro")
@@ -45,7 +46,7 @@ def update(frame):
                 atoms[j, 1] = 198
             elif y == 0:
                 atoms[j, 1] = 2
-            
+
     ln.set_data(atoms[:, 0], atoms[:, 1])
     return (ln,)
 

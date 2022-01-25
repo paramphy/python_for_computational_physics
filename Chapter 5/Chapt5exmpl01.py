@@ -32,8 +32,10 @@ def pendulum(state, time):
 answer = odeint(pendulum, state, time)
 
 fig, ax = plt.subplots()  # Create a figure and an axes.
-#ax.plot(time, answer[:, 0], label="Data")  # Plot some data on the axes.
-ax.plot(answer[:, 0], answer[:, 1], label="beta = 0.1, g/l = 1")  # Plot some data on the axes.
+# ax.plot(time, answer[:, 0], label="Data")  # Plot some data on the axes.
+ax.plot(
+    answer[:, 0], answer[:, 1], label="beta = 0.1, g/l = 1"
+)  # Plot some data on the axes.
 ax.set_xlabel("Angle")  # Add an x-label to the axes.
 ax.set_ylabel("Angular velocity")  # Add a y-label to the axes.
 ax.set_title("Damped Pendulum Phase Space")  # Add a title to the axes.

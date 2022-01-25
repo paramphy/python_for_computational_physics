@@ -1,5 +1,6 @@
 import sys
 from random import randint  # randint(a, b) picks a random integer in
+
 # the range(a, b), inclusive.
 from matplotlib import animation
 import numpy as np
@@ -9,18 +10,17 @@ from matplotlib.animation import *
 # Allow animation
 # Defined droplet coordinates(all droplets) to be at point 100, 100.
 atoms = np.ones([400, 2]) * 100
-grid = np.zeros([400,2])
-probablity = np.zeros([400,1])
+grid = np.zeros([400, 2])
+probablity = np.zeros([400, 1])
 
-    
 
-#print(grid)
+# print(grid)
 # show initial configuration
 fig, ax = plt.subplots()
 ax.set_xlabel("Position along X axis")
 ax.set_ylabel("Position along Y axis")
 ax.set_title("Diffusion of particles")  # Add a title to the axes.
-ax.plot(grid[:,0], grid[:,1])
+ax.plot(grid[:, 0], grid[:, 1])
 
 (ln,) = plt.plot(atoms[:, 0], atoms[:, 1], "ro")
 
@@ -51,16 +51,16 @@ def update(frame):
                 atoms[j, 1] = 198
             elif y == 0:
                 atoms[j, 1] = 2
-        #print(atoms)
-        for j in range(0,400,10):
-            if j-5<=atoms[j,0]<=j+5 and j-5<=atoms[j,1]<=j+5:
+        # print(atoms)
+        for j in range(0, 400, 10):
+            if j - 5 <= atoms[j, 0] <= j + 5 and j - 5 <= atoms[j, 1] <= j + 5:
                 probablity[j] = 1
             else:
-                probablity[j] = 0    
+                probablity[j] = 0
             print(probablity)
-            
+
     ln.set_data(atoms[:, 0], atoms[:, 1])
-    #ln.set_data(np.linspace(0,400,40), probablity)
+    # ln.set_data(np.linspace(0,400,40), probablity)
     return (ln,)
 
 
@@ -70,9 +70,9 @@ ani = FuncAnimation(
 )
 f = r"Chapter 7\diffusion.gif"
 writergif = animation.PillowWriter(fps=60)
-#ani.save(
+# ani.save(
 #    f,
 #    writer=writergif,
 #    progress_callback=lambda i, n: print(f"Saving frame {i} of {n}"),
-#)
+# )
 plt.show()
